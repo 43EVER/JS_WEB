@@ -7,8 +7,8 @@ import { TypegooseModule } from 'nestjs-typegoose'
 @Module({
   imports: [
     TypegooseModule.forRoot("mongodb://localhost/nest-blog-api", {
-      useNewUrlParser: false,
-      useFindAndModify: true,
+      useNewUrlParser: true,
+      useFindAndModify: false,
       useCreateIndex: true
     }),
     PostsModule
